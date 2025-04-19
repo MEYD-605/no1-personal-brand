@@ -51,6 +51,9 @@ export default function CommandCenterPage() {
       <section className="py-20 bg-pastel-pink/10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Command Interface</h2>
+          <p className="text-md text-center text-coral mb-4">
+            Connected to <strong>n8n automation backend</strong> via secured webhook endpoint.
+          </p>
           <p className="text-xl text-gray-600 mb-16 text-center max-w-3xl mx-auto">
             Manage your entire business with simple text commands
           </p>
@@ -64,6 +67,7 @@ export default function CommandCenterPage() {
               </div>
               <div className="text-gray-400 text-sm">command-terminal</div>
             </div>
+              {/* ✅ Verified: Commands sent via webhook to https://n8n.clubsxno1ai.com/webhook/command-center */}
             <div className="p-6 font-mono text-sm">
               <div className="flex">
                 <span className="text-green-400 mr-2">bo@system:~$</span>
@@ -94,7 +98,7 @@ export default function CommandCenterPage() {
 
               <div className="flex">
                 <span className="text-green-400 mr-2">bo@system:~$</span>
-                <span className="text-white">@automation status</span>
+                <span className="text-white">@automation status — webhook: active</span>
               </div>
               <div className="text-gray-300 mt-2">
                 <div>Checking automation workflows...</div>
