@@ -16,7 +16,7 @@ export default function ServicesPage() {
           fontSize: '1rem',
           cursor: 'pointer',
         }}
-        onClick={() => alert('นี่คือการทดลองย้อนกลับ!')}
+        onClick={() => window.history.back()}
       >
         ทดลองย้อนกลับ
       </button>

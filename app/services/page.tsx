@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: "Services Dashboard | Club S by Bo",
@@ -16,7 +17,6 @@ export default function ServicesPage() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   
-  import Head from 'next/head';
  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
