@@ -3,11 +3,6 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 
-export const metadata: Metadata = {
-  title: "Services Dashboard | Club S by Bo",
-  description: "Access our automation workflows and service tools",
-  keywords: ["services", "dashboard", "automation", ","]
-}
 
 export default function ServicesPage() {
   const [open, setOpen] = useState(false);
