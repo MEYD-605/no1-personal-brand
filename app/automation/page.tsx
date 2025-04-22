@@ -1,3 +1,5 @@
+'use client'
+
 export default function ServicesPage() {
   return (
     <div style={{ padding: '80px 40px', textAlign: 'center' }}>
@@ -18,7 +20,7 @@ export default function ServicesPage() {
         }}
         onClick={() => window.history.back()}
       >
-        ทดลองย้อนกลับ
+        Go Back
       </button>
     </div>
   );
